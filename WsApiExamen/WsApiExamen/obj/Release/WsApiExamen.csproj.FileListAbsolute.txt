@@ -1,0 +1,2 @@
+C:\Users\nnte9\OneDrive\Escritorio\Noe Nicolas Torres Escobar\WsApiExamen\WsApiExamen\obj\Release\WsApiExamen.csproj.AssemblyReference.cache
+C:\Users\nnte9\OneDrive\Escritorio\Noe Nicolas Torres Escobar\WsApiExamen\WsApiExamen\obj\Release\WsApiExamen.csproj.CoreCompileInputs.cache

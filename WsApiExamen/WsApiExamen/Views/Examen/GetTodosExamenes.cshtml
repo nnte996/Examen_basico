@@ -1,0 +1,43 @@
+﻿@model IEnumerable<tblExamen>
+
+<h2>GetTodosExamenes</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo", "AgregarExamen")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idExamen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idExamen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "ActualizarExamen", new { idExamen = item.idExamen, Nombre = item.Nombre, descripcion = item.Descripcion }) |
+                @Html.ActionLink("Detalles", "ConsultarExamen", new { idExamen = item.idExamen }) |
+                @Html.ActionLink("Eliminar", "EliminarExamen", new { idExamen = item.idExamen })
+            </td>
+        </tr>
+
+    }
+
+</table>

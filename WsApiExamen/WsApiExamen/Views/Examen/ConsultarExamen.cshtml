@@ -1,0 +1,30 @@
+﻿@model tblExamen
+
+@{
+    ViewBag.Title = "ConsultarExamen";
+}
+
+<h2>ConsultarExamen</h2>
+
+<div>
+    <h4>Examenes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.idExamen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "ActualizarExamen", new { idExamen = Model.idExamen }) |
+    @Html.ActionLink("Regresar", "GetTodosExamenes")
+</p>
